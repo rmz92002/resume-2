@@ -6,7 +6,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import Navbar from "@/components/navbar";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import geek from '@/images/geek.png'
-import gala from '@/images/gala.png'
+import gala from '@/images/Gala.png'
 import lion from '@/images/lion.png'
 import intelligo from '@/images/intelligo.png'
 import doodle from '@/images/doodle.png'
@@ -24,6 +24,7 @@ export default function TracingBeamDemo() {
     <TracingBeam className="px-6 ">
     <div className="overflow-hidden dark:bg-[#0B0B0F] w-full">
       <MacbookScroll
+
       badge={(<IconBadge color="white" className="text-white" />)}
         title={
           <span style={{color:'white', fontSize: 40}}>
