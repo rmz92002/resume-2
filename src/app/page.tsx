@@ -1,113 +1,180 @@
-import Image from "next/image";
+"use client";
+import React from "react";
+import { WavyBackground } from "../components/ui/wavy-background";
+import imageResume from '../images/resume-photo.png'
+import Navbar from "../components/navbar";
+import { TracingBeam } from "../components/ui/tracing-beam";
+// import { calsans } from "@/fonts/calsans";
+// import Image from "next/image";
+import { twMerge } from "tailwind-merge";
+import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
+import Link from "next/link";
+import { Tabs } from "@/components/ui/tabs";
+import { motion } from "framer-motion";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+
+export default function page() {
+  const tabs = [
+    {
+      title: "Code",
+      value: "code",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900" style={{maxWidth:'100%', overflow:'hidden'}}>
+          <p>Code</p>
+          <p style={{fontSize: 18, fontWeight:"300"}}>
+          Over the course of my development journey, I have acquired a comprehensive skill set that includes Python, JavaScript, HTML, CSS, React, React Native, MongoDB, and Node.js. Leveraging these diverse technologies, I have successfully designed and implemented a variety of projects. These endeavors not only allowed me to apply my theoretical knowledge in practical scenarios but also helped me to refine my problem-solving skills, deepen my understanding of software development principles, and enhance my ability to create robust, scalable applications. Each project served as a stepping stone, enabling me to explore new challenges and continuously expand my technical expertise.
+          </p>
+         <div style={{width:'100%', display:'flex', alignItems:'center', justifyContent:'center', marginTop: 50}}>
+         <Link href={"/work"}>
+         <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} style={{display:'flex', alignItems:'center', justifyContent:'center', borderStyle:'solid', borderColor:'white', color:'white', fontSize: 20, borderWidth: 2, borderRadius: 10, fontWeight:'300', width: 200, textAlign:'center'}}>
+        <p>{`View Projects ->`}</p>
+        </motion.div>
+        </Link>
+          </div> 
         </div>
+      ),
+    },
+    {
+      title: "Film",
+      value: "film",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          <p>Film</p>
+          <p style={{fontSize: 18, fontWeight:"300"}}>
+            In the realm of filmmaking, my creative journey has been marked by the proficient use of Final Cut Pro, through which I've crafted compelling narratives and visually striking content. One of my most notable projects is a documentary that delves into the lives of Venezuelan immigrants in Colombia, offering a poignant look at their struggles and resilience in the face of adversity. This work not only showcases my ability to convey powerful stories through film but also highlights my commitment to shedding light on significant social issues. Additionally, I manage a YouTube channel where I regularly upload content that spans a variety of topics, including finance, providing valuable insights and engaging discussions to a diverse audience. This platform has become a conduit for my creativity, allowing me to explore different subjects and connect with viewers on multiple levels.
+          </p>
+         <div style={{width:'100%', display:'flex', alignItems:'center', justifyContent:'center', marginTop: 50}}>
+          <Link href={"/film"}>
+          <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} style={{display:'flex', alignItems:'center', justifyContent:'center', borderStyle:'solid', borderColor:'white', color:'white', fontSize: 20, borderWidth: 2, borderRadius: 10, fontWeight:'300', width: 200, textAlign:'center'}}>
+        <p>{`View Films ->`}</p>
+        </motion.div>
+          </Link>
+          </div> 
+        </div>
+      ),
+    },
+    {
+      title: "Other Hobbies",
+      value: "other-hobbies",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          <p>Other Hobbies</p>
+          <p style={{fontSize: 18, fontWeight:"300"}}>
+          In the rare moments of leisure I find amidst my bustling schedule, I immerse myself in activities that not only fuel my passions but also contribute to my personal growth. Soccer, a sport close to my heart, offers me an exhilarating escape and a way to stay physically active, fostering both teamwork and individual skills on the field. As a DJ, I explore the vast landscapes of music, curating soundscapes that resonate with diverse audiences and reflect my artistic expression. This creative outlet not only sharpens my auditory sensibilities but also connects me with the vibrant energy of live performances. Moreover, my commitment to continuous learning sees me dedicating time to further studies, constantly expanding my knowledge base and staying abreast of new developments in my fields of interest. Each of these pursuits—soccer, DJing, and studying—represents a facet of my multifaceted life, contributing to a rich tapestry of experiences that shape who I am.          </p>
+         <div style={{width:'100%', display:'flex', alignItems:'center', justifyContent:'center', marginTop: 50}}>
+         <Link href={"/hobbies"}>
+         <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} style={{display:'flex', alignItems:'center', justifyContent:'center', borderStyle:'solid', borderColor:'white', color:'white', fontSize: 20, borderWidth: 2, borderRadius: 10, fontWeight:'300', width: 200, textAlign:'center'}}>
+        <p>{`View Hobbies ->`}</p>
+        </motion.div>
+        </Link>
+          </div> 
+        </div>
+      ),
+    },
+  ];
+  return (
+    <div style={{background: 'black'}}>
+      <Navbar/>
+    <TracingBeam className=" bg-black">
+    <WavyBackground className="max-w-4xl  mx-auto pb-40 ">
+    
+      <div style={{display:'flex', flexDirection: 'column', justifyContent:'space-evenly', alignItems:'center', width:'100wh'}}>
+      <img src="https://media.licdn.com/dms/image/D5603AQEwAbObEPquGw/profile-displayphoto-shrink_400_400/0/1709151058725?e=1714608000&v=beta&t=lWr8SFxXHZqsRCjyT2slBEZ08E1wvaeJdN0-JwWkvRw" className="rounded-full w-30 h-30 md:w-30 md:h-30 lg:w-30 lg:h-30"/>
+      <div>
+      <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center" style={{marginTop: 30}}>
+        Santiago Ramirez
+      </p>
+      <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
+        Machine Learning Engineer, Fullstack Developer, Designer, UC Berkeley Student, and Soccer Player
+      </p>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* <a href={Profile} target="_blank" rel="noopener noreferrer" style={{marginTop: 20}}>
+      <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" style={{marginTop: 20}}>
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl" style={{fontSize: 20}}>
+          Resume
+        </span>
+      </button>
+      </a> */}
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      </WavyBackground>
+      <p  style={{color:'white', fontSize: 100, textAlign:'center'}}>What I do?</p>
+      <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40 bg-black">
+      <Tabs tabs={tabs} />
       </div>
-    </main>
+    </TracingBeam>
+    <div style={{height: 100, width:'100%', background:'black'}}/>
+    </div>
+    
   );
 }
+
+const DummyContent = () => {
+  return (
+    <img
+      src=""
+      alt="dummy image"
+      width="1000"
+      height="1000"
+      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+    />
+  );
+};
+// const dummyContent = [
+//   {
+//     title: "Lorem Ipsum Dolor Sit Amet",
+//     description: (
+//       <>
+//         <p style={{color:'white'}}>
+//         Over the course of my development journey, I have acquired a comprehensive skill set that includes Python, JavaScript, HTML, CSS, React, React Native, MongoDB, and Node.js. Leveraging these diverse technologies, I have successfully designed and implemented a variety of projects. These endeavors not only allowed me to apply my theoretical knowledge in practical scenarios but also helped me to refine my problem-solving skills, deepen my understanding of software development principles, and enhance my ability to create robust, scalable applications. Each project served as a stepping stone, enabling me to explore new challenges and continuously expand my technical expertise.
+//         </p>
+        
+//       </>
+//     ),
+//     badge: "Coding",
+//     image:
+//       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   },
+//   {
+//     title: "Lorem Ipsum Dolor Sit Amet",
+//     description: (
+//       <>
+//         <p>
+//           Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
+//           deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
+//           non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
+//           sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
+//           velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
+//           commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+//         </p>
+//         <p>
+//           In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
+//           veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
+//           reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
+//           cillum ut mollit.
+//         </p>
+//       </>
+//     ),
+//     badge: "Changelog",
+//     image:
+//       "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   },
+//   {
+//     title: "Lorem Ipsum Dolor Sit Amet",
+//     description: (
+//       <>
+//         <p>
+//           Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
+//           deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
+//           non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
+//           sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
+//           velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
+//           commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+//         </p>
+//       </>
+//     ),
+//     badge: "Launch Week",
+//     image:
+//       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   },
+// ];
