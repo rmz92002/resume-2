@@ -67,8 +67,9 @@ const dummyContent = [
       description: (
         <>
           <p style={{color:'white', marginTop: 20}}>
-          I usually do travel videos whenever I visit some country, and I thoroughly enjoy the process of editing. For me, editing is not just about piecing clips together; it's an art form that allows me to showcase my creative side. It's in these moments, when I'm sifting through hours of footage, that I find the true essence of my travels. I get to relive the experiences, the laughter, and the awe-inspiring landscapes, all while crafting a narrative that's uniquely mine. The editing process also challenges me to think differently about storytelling, encouraging me to experiment with various techniques, transitions, and music to convey emotions and stories in the most engaging way possible. It's this creative freedom and the ability to share my adventures in a personal and impactful manner that I believe makes editing the best part of my travel experiences. Each video becomes a keepsake, a reflection of not just the places I've been to but also of my growth as a creator and an individual.
-          </p>
+        I usually do travel videos whenever I visit some country, and I thoroughly enjoy the process of editing. For me, editing is not just about piecing clips together; it's an art form that allows me to showcase my creative side. It's in these moments, when I'm sifting through hours of footage, that I find the true essence of my travels. I get to relive the experiences, the laughter, and the awe-inspiring landscapes, all while crafting a narrative that's uniquely mine. The editing process also challenges me to think differently about storytelling, encouraging me to experiment with various techniques, transitions, and music to convey emotions and stories in the most engaging way possible. It's this creative freedom and the ability to share my adventures in a personal and impactful manner that I believe makes editing the best part of my travel experiences. Each video becomes a keepsake, a reflection of not just the places I've been to but also of my growth as a creator and an individual.
+        </p>
+
         </>
       ),
       badge: "",
