@@ -88,7 +88,7 @@ export default function TracingBeamDemo() {
           translateZ="60"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
         >
-I developed a website for the nonprofit Free Geek Toronto, specializing in selling used electronics. This website employs web scraping to gather internet pricing data for products and employs AI to estimate their approximate values. It's a valuable tool for Free Geek Toronto, aiding in pricing decisions while promoting sustainability in the electronics market.        </CardItem>
+{"I developed a website for the nonprofit Free Geek Toronto, specializing in selling used electronics. This website employs web scraping to gather internet pricing data for products and employs AI to estimate their approximate values. It's a valuable tool for Free Geek Toronto, aiding in pricing decisions while promoting sustainability in the electronics market."}       </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
             src={geek}
@@ -188,7 +188,7 @@ I developed a website for the nonprofit Free Geek Toronto, specializing in selli
           translateZ="60"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
         >
-            This is my re-creation of Doodle jump, a project for my CS61a course on Structure and Interpretation of Computer Programs. The project was challenging as I needed to apply physics into coding but it in the end, it's a project that I am most proud of!
+            {"This is my re-creation of Doodle jump, a project for my CS61a course on Structure and Interpretation of Computer Programs. The project was challenging as I needed to apply physics into coding but it in the end, it's a project that I am most proud of!"}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image

@@ -26,7 +26,7 @@ export default function TracingBeamDemo() {
   translateZ="60"
   className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
 >
-  Feel free to reach out to me through any of the following channels. I'm always open to discussing new opportunities, projects, or just connecting with like-minded individuals.
+  {"Feel free to reach out to me through any of the following channels. I'm always open to discussing new opportunities, projects, or just connecting with like-minded individuals."}
 </CardItem>
 <div className="flex flex-col items-start mt-4">
 <CardItem as="div" translateZ="60" className="flex flex-col gap-4 mt-2">
