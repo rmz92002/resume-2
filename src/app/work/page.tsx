@@ -28,7 +28,7 @@ export default function TracingBeamDemo() {
       badge={(<IconBadge color="white" className="text-white" />)}
         title={
           <span style={{color:'white', fontSize: 40}}>
-            Coding Portfolio
+            Scroll below to see my Projects
           </span>
         }
         
@@ -81,7 +81,7 @@ export default function TracingBeamDemo() {
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
         >
-            Free Geek Toronto Project
+            {'Free Geek Toronto Project'}
         </CardItem>
         <CardItem
           as="p"
