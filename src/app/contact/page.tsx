@@ -60,7 +60,7 @@ Personal email: <a href="mailto:rmz92002@gmail.com">rmz92002@gmail.com</a>
   <path d="M12 16l0 -5" />
   <path d="M16 16v-3a2 2 0 0 0 -4 0" />
 </svg>
-    <a href="http://www.linkedin.com/in/santiago-ramirez-68802424a" className="text-neutral-500 text-sm dark:text-neutral-300" style={{marginLeft: 10}}>LinkedIn Profile</a>
+    <a href="https://www.linkedin.com/in/santiago-ramirez-villalobos-68802424a" className="text-neutral-500 text-sm dark:text-neutral-300" style={{marginLeft: 10}}>LinkedIn Profile</a>
   </div>
   <div className="flex items-center">
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
