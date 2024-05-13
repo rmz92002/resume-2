@@ -79,7 +79,7 @@ export default function page() {
     <WavyBackground className="max-w-4xl  mx-auto pb-40 ">
     
       <div style={{display:'flex', flexDirection: 'column', justifyContent:'space-evenly', alignItems:'center', width:'100wh'}}>
-      <img src="https://media.licdn.com/dms/image/D5603AQEwAbObEPquGw/profile-displayphoto-shrink_400_400/0/1709151058725?e=1714608000&v=beta&t=lWr8SFxXHZqsRCjyT2slBEZ08E1wvaeJdN0-JwWkvRw" className="rounded-full w-30 h-30 md:w-30 md:h-30 lg:w-30 lg:h-30"/>
+      <img src={imageResume.src} className=" w-30 h-30 md:w-30 md:h-30 lg:w-30 lg:h-30" height={300} width={300} style={{borderRadius:50}}/>
       <div>
       <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center" style={{marginTop: 30}}>
         Santiago Ramirez

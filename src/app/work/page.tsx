@@ -39,14 +39,14 @@ export default function TracingBeamDemo() {
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
-          translateZ="50"
+          translateZ="20"
           className="text-xl font-bold text-neutral-600 dark:text-white"
         >
         AIMG
         </CardItem>
         <CardItem
           as="p"
-          translateZ="60"
+          translateZ="20"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
         >
             Co-founded a cutting-edge technology startup with my brother that utilizes artificial intelligence to generate high-quality images and prints them on demand for customers. Our mission is to revolutionize the way people consume and interact with art, making it more accessible, personalized, and affordable for everyone.
@@ -63,7 +63,7 @@ export default function TracingBeamDemo() {
         <div className="flex justify-center items-center mt-10">
 <Link  href="https://aimg.art/" >
 <CardItem
-    translateZ={20}
+    translateZ={100}
     as="a"
     className="px-4 py-2 rounded-xl text-m font-normal dark:text-white bg-black dark:bg-white dark:text-black text-white"
   >
@@ -78,14 +78,14 @@ export default function TracingBeamDemo() {
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
-          translateZ="50"
+          translateZ="20"
           className="text-xl font-bold text-neutral-600 dark:text-white"
         >
             {'Free Geek Toronto Project'}
         </CardItem>
         <CardItem
           as="p"
-          translateZ="60"
+          translateZ="20"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
         >
 {"I developed a website for the nonprofit Free Geek Toronto, specializing in selling used electronics. This website employs web scraping to gather internet pricing data for products and employs AI to estimate their approximate values. It's a valuable tool for Free Geek Toronto, aiding in pricing decisions while promoting sustainability in the electronics market."}       </CardItem>
@@ -109,33 +109,6 @@ export default function TracingBeamDemo() {
   </CardItem>
   </Link>
 </div>
-      </CardBody>
-    </CardContainer>
-    <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-        <CardItem
-          translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
-        >
-        Gala
-        </CardItem>
-        <CardItem
-          as="p"
-          translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-        >
-            Right now I am currently creating my own mobile appllication called Gala. For this to happen I learned React, React Native, NodeJS, and MongoDB.
-    </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
-          <Image
-            src={gala}
-            height="1000"
-            width="1000"
-            className="h-100 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </CardItem>
-        
       </CardBody>
     </CardContainer>
     <CardContainer className="inter-var">
@@ -172,33 +145,7 @@ export default function TracingBeamDemo() {
     View Website
   </CardItem>
   </Link>
-</div>
-      </CardBody>
-    </CardContainer>
-    <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-        <CardItem
-          translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
-        >
-        Doodle Jump re-creation
-        </CardItem>
-        <CardItem
-          as="p"
-          translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-        >
-            {"This is my re-creation of Doodle jump, a project for my CS61a course on Structure and Interpretation of Computer Programs. The project was challenging as I needed to apply physics into coding but it in the end, it's a project that I am most proud of!"}
-        </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
-          <Image
-            src={doodle}
-            height="1000"
-            width="1000"
-            className="h-100 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </CardItem>
+  </div>
       </CardBody>
     </CardContainer>
     <CardContainer className="inter-var">
@@ -236,6 +183,60 @@ export default function TracingBeamDemo() {
   </CardItem>
   </Link>
 </div>
+
+      </CardBody>
+    </CardContainer>
+    <CardContainer className="inter-var">
+      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardItem
+          translateZ="50"
+          className="text-xl font-bold text-neutral-600 dark:text-white"
+        >
+        Doodle Jump re-creation
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="60"
+          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+        >
+            {"This is my re-creation of Doodle jump, a project for my CS61a course on Structure and Interpretation of Computer Programs. The project was challenging as I needed to apply physics into coding but it in the end, it's a project that I am most proud of!"}
+        </CardItem>
+        <CardItem translateZ="100" className="w-full mt-4">
+          <Image
+            src={doodle}
+            height="1000"
+            width="1000"
+            className="h-100 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
+        </CardItem>
+      </CardBody>
+    </CardContainer>
+    <CardContainer className="inter-var">
+      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardItem
+          translateZ="50"
+          className="text-xl font-bold text-neutral-600 dark:text-white"
+        >
+        Gala
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="60"
+          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+        >
+            Right now I am currently creating my own mobile appllication called Gala. For this to happen I learned React, React Native, NodeJS, and MongoDB.
+    </CardItem>
+        <CardItem translateZ="100" className="w-full mt-4">
+          <Image
+            src={gala}
+            height="1000"
+            width="1000"
+            className="h-100 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
+        </CardItem>
+        
       </CardBody>
     </CardContainer>
     </TracingBeam>
